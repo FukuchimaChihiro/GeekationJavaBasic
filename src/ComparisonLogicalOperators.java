@@ -8,18 +8,23 @@ public class ComparisonLogicalOperators {
 		
 		System.out.println(isGreater);
 		
-		String weather = "晴れ";
-		String temp = "暖かい";
-		boolean isSunny = (weather == "晴れ" && temp == "暖かい");
-		boolean isWorm = !isSunny;
+//		String weather = "晴れ";
+//		String temp = "暖かい";
+//		boolean isSunny = (weather == "晴れ" && temp == "暖かい");
+//		boolean isWorm = !isSunny;
+//		
+//		System.out.println(isSunny);
 		
-		System.out.println(isSunny);
+		boolean isSunny = true;
+		boolean isWarm = true;
+		boolean andResultA = (isSunny == true && isWarm == true);
+		System.out.println(andResultA);
 		
 		int x = 3;
 		int y = 4;
-		boolean andResult = (x > 0 && y % 2 == 0);
+		boolean andResultB = (x > 0 && y % 2 == 0);
 		
-		System.out.println(andResult);
+		System.out.println(andResultB);
 		
 		boolean hasPermission = false;
 		
