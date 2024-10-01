@@ -9,12 +9,13 @@ public class GeekIntroduction {
 	}
 	
 	public static void specialSkill(int num1, int num2) {
-		if(num1 >= num2) {
-			System.out.println("num2はnum1より大きい値にしてください。");
-		}
-		for(int num = num1; num <= num2; num ++) {
+		for(int num = num1; num != num2 + 1; num ++) {
 			if(num1 < 1 || num2 < 1) {
 				System.out.println("num1とnum2は0より大きい値にしてください。");
+				break;
+			}
+			if(num1 >= num2) {
+				System.out.println("num2はnum1より大きい値にしてください。");
 				break;
 			}
 			if(num1 > 300 || num2 > 300) {
